@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1380 180" font-family="'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans CJK JP', sans-serif">
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <rect x="10" y="50" width="280" height="90" rx="10" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="150" y="90" text-anchor="middle" fill="#dbeafe" font-size="22" font-weight="bold">作業ディレクトリ</text>
+  <text x="150" y="118" text-anchor="middle" fill="#93c5fd" font-size="18">（編集）</text>
+
+  <text x="340" y="86" text-anchor="middle" fill="#93c5fd" font-size="20" font-weight="bold">git add</text>
+  <line x1="295" y1="95" x2="385" y2="95" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+
+  <rect x="390" y="50" width="280" height="90" rx="10" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="530" y="102" text-anchor="middle" fill="#dbeafe" font-size="22" font-weight="bold">ステージング</text>
+
+  <text x="720" y="86" text-anchor="middle" fill="#93c5fd" font-size="20" font-weight="bold">git commit</text>
+  <line x1="675" y1="95" x2="765" y2="95" stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+
+  <rect x="770" y="50" width="280" height="90" rx="10" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="910" y="102" text-anchor="middle" fill="#dbeafe" font-size="22" font-weight="bold">リポジトリ</text>
+
+  <text x="1100" y="86" text-anchor="middle" fill="#a7f3d0" font-size="20" font-weight="bold">git push</text>
+  <line x1="1055" y1="95" x2="1145" y2="95" stroke="#34d399" stroke-width="2.5" marker-end="url(#arrow-emerald)"/>
+
+  <rect x="1150" y="50" width="220" height="90" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+  <text x="1260" y="102" text-anchor="middle" fill="#a7f3d0" font-size="22" font-weight="bold">GitHub</text>
+</svg>
