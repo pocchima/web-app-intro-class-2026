@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" font-family="'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans CJK JP', sans-serif">
+  <style>
+    .title { fill: #93c5fd; font-size: 22px; font-weight: bold; }
+    .container { fill: #1e3a8a; fill-opacity: 0.25; stroke: #60a5fa; stroke-width: 2; stroke-dasharray: 8 5; }
+    .item { fill: #1e3a8a; stroke: #3b82f6; stroke-width: 2; }
+    .item-text { fill: #dbeafe; font-size: 22px; font-weight: bold; }
+    .axis-line { stroke: #94a3b8; stroke-width: 1.5; stroke-dasharray: 6 4; }
+    .axis-label { fill: #cbd5e1; font-size: 14px; }
+    .note { fill: #cbd5e1; font-size: 16px; }
+    .css-label { fill: #93c5fd; font-size: 16px; font-weight: bold; }
+  </style>
+
+  <defs>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <text x="550" y="38" text-anchor="middle" class="title">Flexbox ヘッダー（justify-content: space-between / align-items: center）</text>
+
+  <!-- container（header） -->
+  <rect x="80" y="100" width="940" height="120" rx="8" class="container"/>
+
+  <!-- 左：h1 TODO App -->
+  <rect x="110" y="135" width="220" height="50" rx="6" class="item"/>
+  <text x="220" y="167" text-anchor="middle" class="item-text">TODO App</text>
+
+  <!-- 右：nav メニュー -->
+  <rect x="770" y="135" width="220" height="50" rx="6" class="item"/>
+  <text x="880" y="167" text-anchor="middle" class="item-text">メニュー</text>
+
+  <!-- 主軸（横）矢印 -->
+  <line x1="110" y1="245" x2="990" y2="245" class="axis-line"
+        marker-start="url(#arrow-slate)" marker-end="url(#arrow-slate)"/>
+  <text x="550" y="265" text-anchor="middle" class="axis-label">主軸（横）= justify-content: space-between → 両端に分配</text>
+
+  <!-- 交差軸（縦）矢印 -->
+  <line x1="50" y1="110" x2="50" y2="210" class="axis-line"
+        marker-start="url(#arrow-slate)" marker-end="url(#arrow-slate)"/>
+  <text x="50" y="290" text-anchor="middle" class="axis-label">交差軸（縦）</text>
+  <text x="50" y="310" text-anchor="middle" class="axis-label">align-items: center</text>
+
+  <!-- 補足 -->
+  <text x="550" y="335" text-anchor="middle" class="note">破線の枠 = .header（display: flex のコンテナ）</text>
+</svg>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 560" font-family="'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans CJK JP', sans-serif">
+  <style>
+    .title { fill: #93c5fd; font-size: 22px; font-weight: bold; }
+    .device-label { fill: #93c5fd; font-size: 18px; font-weight: bold; }
+    .viewport { fill: #334155; fill-opacity: 0.35; stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 8 5; }
+    .card { fill: #1e3a8a; stroke: #3b82f6; stroke-width: 2.5; }
+    .card-text { fill: #dbeafe; font-size: 20px; font-weight: bold; }
+    .margin { fill: #475569; fill-opacity: 0.5; stroke: #64748b; stroke-width: 1; stroke-dasharray: 4 4; }
+    .measure-line { stroke: #94a3b8; stroke-width: 1.5; }
+    .measure-label { fill: #cbd5e1; font-size: 14px; }
+    .measure-label-card { fill: #93c5fd; font-size: 14px; font-weight: bold; }
+    .note { fill: #a7f3d0; font-size: 15px; }
+  </style>
+
+  <defs>
+    <marker id="tick-slate" viewBox="0 0 10 10" refX="5" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M5,0 L5,10" stroke="#94a3b8" stroke-width="1.5"/>
+    </marker>
+    <marker id="arrow-slate-mw" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <text x="650" y="38" text-anchor="middle" class="title">max-width: 600px / width: 100% / margin: auto</text>
+
+  <!-- ===== PC 1200px ===== -->
+  <text x="60" y="90" class="device-label">PC（幅 1200px）</text>
+
+  <!-- viewport -->
+  <rect x="60" y="110" width="1200" height="100" rx="4" class="viewport"/>
+
+  <!-- left margin (300px) -->
+  <rect x="60" y="110" width="300" height="100" class="margin"/>
+  <!-- card (600px, centered) -->
+  <rect x="360" y="125" width="600" height="70" rx="8" class="card"/>
+  <text x="660" y="167" text-anchor="middle" class="card-text">.todo-card（max-width: 600px）</text>
+  <!-- right margin (300px) -->
+  <rect x="960" y="110" width="300" height="100" class="margin"/>
+
+  <!-- PC measurements -->
+  <line x1="60" y1="240" x2="360" y2="240" class="measure-line"
+        marker-start="url(#arrow-slate-mw)" marker-end="url(#arrow-slate-mw)"/>
+  <text x="210" y="260" text-anchor="middle" class="measure-label">300px（自動余白）</text>
+
+  <line x1="360" y1="240" x2="960" y2="240" class="measure-line"
+        marker-start="url(#arrow-slate-mw)" marker-end="url(#arrow-slate-mw)"/>
+  <text x="660" y="260" text-anchor="middle" class="measure-label-card">600px（max-width）</text>
+
+  <line x1="960" y1="240" x2="1260" y2="240" class="measure-line"
+        marker-start="url(#arrow-slate-mw)" marker-end="url(#arrow-slate-mw)"/>
+  <text x="1110" y="260" text-anchor="middle" class="measure-label">300px（自動余白）</text>
+
+  <!-- viewport total -->
+  <line x1="60" y1="290" x2="1260" y2="290" class="measure-line"
+        marker-start="url(#arrow-slate-mw)" marker-end="url(#arrow-slate-mw)"/>
+  <text x="660" y="282" text-anchor="middle" class="measure-label">ビューポート 1200px</text>
+
+  <!-- ===== Smartphone 375px ===== -->
+  <text x="60" y="370" class="device-label">スマホ（幅 375px）</text>
+
+  <!-- viewport (centered visually) -->
+  <rect x="460" y="390" width="375" height="100" rx="4" class="viewport"/>
+  <!-- card fills width (max-width:600px は効かず width:100% が効く) -->
+  <rect x="475" y="405" width="345" height="70" rx="8" class="card"/>
+  <text x="647" y="447" text-anchor="middle" class="card-text">.todo-card（width: 100%）</text>
+
+  <!-- Smartphone measurement -->
+  <line x1="460" y1="510" x2="835" y2="510" class="measure-line"
+        marker-start="url(#arrow-slate-mw)" marker-end="url(#arrow-slate-mw)"/>
+  <text x="647" y="530" text-anchor="middle" class="measure-label-card">ビューポート 375px ＝ カード幅</text>
+
+  <!-- Note -->
+  <text x="60" y="425" class="note">画面が狭ければ</text>
+  <text x="60" y="447" class="note">width: 100% が効き</text>
+  <text x="60" y="469" class="note">カードが画面幅に収まる</text>
+</svg>
