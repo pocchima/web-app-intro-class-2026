@@ -107,7 +107,7 @@ TODOの追加・完了・削除ができる！ だが...
 
 ### 「入力は信用するな」（Never Trust User Input）
 
-![height:430](images/never-trust-input.svg)
+![height:410](images/never-trust-input.svg)
 
 - テキスト入力欄に「普通のテキスト」が入るとは限らない
 - **HTMLタグ**、**スクリプト**、**SQL文**が入力される可能性がある
@@ -127,10 +127,11 @@ TODOアプリに悪意のある入力をしてみましょう。
 
 ### 手順
 
-1. サーバーを起動する
+1. データベースを初期化してサーバーを起動する
    ```bash
    cd session08/exercise
-   python3 main.py
+   python init_db.py   # 第7回からのDBが残っている場合は作り直し
+   python main.py
    ```
 2. ブラウザでTODOアプリを開く
 3. TODO入力欄に以下を入力して「追加」を押す
@@ -429,7 +430,7 @@ def delete_todo(id):
 
 ### 手順
 
-1. サーバーが起動していることを確認（`python3 main.py`）
+1. サーバーが起動していることを確認（`python main.py`）
 2. ブラウザでTODOアプリを開く
 3. TODO入力欄に以下を入力して「追加」を押す
    ```

@@ -466,7 +466,7 @@ SQL操作とHTTPメソッドが **1対1で対応** しています。
 
 ### 手順
 
-1. `exercise06/api_design.md` を開く
+1. `session06/exercise/api_design.md` を開く
 
 2. テンプレートの空欄を埋めて、TODO APIの設計書を完成させる
 

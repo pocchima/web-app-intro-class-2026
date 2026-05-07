@@ -589,7 +589,7 @@ button.addEventListener("click", () => {
 
 ### dom-example.html を使って操作してみましょう
 
-1. ボタンをクリックしたら、新しいリストアイテムを追加するコードを追加 227行目以降に以下を追加してください
+1. `session04/exercise/dom-example.html` を開き、`<script>` タグの中に以下のコードを追加してください
 
 ```javascript
 // 要素の取得 アイテムを追加するボタンとリストを取得
@@ -755,7 +755,7 @@ function render() {
 
 ```javascript
 // CSSで完了状態のスタイルを定義
-// .todo-item.done .todo-text { text-decoration: line-through; opacity: 0.6; }
+// .todo-item.done .todo-title { text-decoration: line-through; opacity: 0.6; }
 
 function toggleTodo(index) {
   todos[index].done = !todos[index].done; // true ⇔ false を切り替え
@@ -826,7 +826,7 @@ function render() {
 
 ```javascript
     const span = document.createElement("span");
-    span.className = "todo-text";
+    span.className = "todo-title";
     span.textContent = todo.title;
 
     const deleteBtn = document.createElement("button");

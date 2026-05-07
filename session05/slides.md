@@ -273,7 +273,7 @@ print(todo)
 
 1. ターミナルを開き、Pythonインタラクティブモードを起動:
    ```
-   python3
+   python
    ```
 2. 以下を順番に試す:
    ```python
@@ -421,7 +421,7 @@ show_todos(todos)
 
    show_todos(todos)
    ```
-3. ターミナルで実行: `python3 basics.py`
+3. ターミナルで実行: `python basics.py`
 
 ---
 
@@ -457,7 +457,7 @@ show_todos(todos)
 ## FastAPIの最小構成
 
 ```python
-# hello_server.py
+# main.py
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -481,7 +481,7 @@ def read_root():
 
 起動コマンド:
 ```
-$ python hello_server.py
+$ python main.py
 ```
 
 ---
