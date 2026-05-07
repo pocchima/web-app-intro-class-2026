@@ -929,8 +929,11 @@ git push
 
 ## 提出物
 
-以下をフォームから提出してください:
+実習で穴埋め・実装を完了させたファイルをフォームから提出してください:
 
 1. `app.js` のGitHubのURL
    - 例: `https://github.com/ユーザー名/リポジトリ名/blob/main/session04/exercise/app.js`
+
+2. `dom-example.html` のGitHubのURL
+   - 例: `https://github.com/ユーザー名/リポジトリ名/blob/main/session04/exercise/dom-example.html`
 

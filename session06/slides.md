@@ -853,7 +853,7 @@ session06/
 
 ## 提出物
 
-以下をフォームから提出してください:
+実習で穴埋め・実装を完了させたファイルをフォームから提出してください:
 
 1. `api_design.md` のGitHubのURL
    - 例: `https://github.com/ユーザー名/リポジトリ名/blob/main/session06/exercise/api_design.md`

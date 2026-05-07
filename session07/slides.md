@@ -717,11 +717,14 @@ const response = await fetch("/todos");
 
 ## 提出物
 
-以下をフォームから提出してください:
+実習で穴埋め・実装を完了させたファイルをフォームから提出してください:
 
 1. `flow.md` のGitHubのURL
    - 例: `https://github.com/ユーザー名/リポジトリ名/blob/main/session07/exercise/flow.md`
 
 2. `main.py` のGitHubのURL
    - 例: `https://github.com/ユーザー名/リポジトリ名/blob/main/session07/exercise/main.py`
+
+3. `app.js` のGitHubのURL
+   - 例: `https://github.com/ユーザー名/リポジトリ名/blob/main/session07/exercise/static/app.js`
 

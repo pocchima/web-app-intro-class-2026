@@ -886,6 +886,18 @@ git push
 
 ---
 
+## 提出物
+
+実習で穴埋め・実装を完了させたファイルをフォームから提出してください:
+
+1. `main.py` のGitHubのURL
+   - 例: `https://github.com/ユーザー名/リポジトリ名/blob/main/session08/exercise/main.py`
+
+2. `app.js` のGitHubのURL
+   - 例: `https://github.com/ユーザー名/リポジトリ名/blob/main/session08/exercise/static/app.js`
+
+---
+
 ## おめでとうございます！
 
 8回の授業を通して、**Webアプリケーション**を完成させました。

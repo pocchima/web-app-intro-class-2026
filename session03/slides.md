@@ -292,7 +292,7 @@ color: rgba(37, 99, 235, 0.5);
 
 ## 実習2（10分）: セレクタとプロパティを試す
 
-自己紹介ページ（第2回で作成）または `todo.html` にスタイルを適用。
+`todo.html` にスタイルを適用。
 
 1. `h1` タグセレクタで見出しの色を変更
 2. HTMLに `class="todo-item"` を追加し、クラスセレクタでスタイル適用
@@ -808,7 +808,10 @@ git push
 
 ## 提出物
 
-以下をフォームから提出してください:
+実習で穴埋め・実装を完了させたファイルをフォームから提出してください:
 
 1. `style.css` のGitHubのURL
    - 例: `https://github.com/ユーザー名/リポジトリ名/blob/main/session03/exercise/style.css`
+
+2. `todo.html` のGitHubのURL
+   - 例: `https://github.com/ユーザー名/リポジトリ名/blob/main/session03/exercise/todo.html`
