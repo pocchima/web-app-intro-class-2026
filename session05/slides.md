@@ -698,7 +698,7 @@ FastAPIは自動で **API仕様書** を生成する
 
 5. 動作確認ができたら、Git でコミット:
    ```
-   cd /workspaces/web-app-intro-sandbox-2026
+   cd /workspaces/web-app-intro-class-2026
    git add session05/
    git commit -m "第5回: Python & FastAPI入門の実習コードを追加"
    git push

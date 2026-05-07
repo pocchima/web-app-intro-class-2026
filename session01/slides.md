@@ -293,7 +293,7 @@ $ echo "Hello" > hello.txt
 ```bash
 # 今いる場所（ディレクトリ）を表示する
 $ pwd
-/workspaces/web-app-intro-sandbox-2026
+/workspaces/web-app-intro-class-2026
 
 # ディレクトリを移動する
 $ cd session01        # session01 フォルダに移動
@@ -780,7 +780,7 @@ HTMLタグを学び、TODOアプリの画面を作り始めます。
 
 ## 提出物
 
-以下をフォームから提出してください:
+実習で作成したファイルをフォームから提出してください:
 
 1. GitHubリポジトリのURL
    - 例: `https://github.com/ユーザー名/リポジトリ名`
