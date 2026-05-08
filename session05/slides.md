@@ -118,7 +118,7 @@ style: |
 
 ---
 
-## 実習1: フロントエンドTODOの問題を確認する (10分)
+## 実習1: フロントエンドTODOの問題を確認する
 
 1. 前回作成したフロントエンドTODOアプリを開く
 2. TODOをいくつか追加する
@@ -269,7 +269,7 @@ print(todo)
 
 ---
 
-## 実習2: ターミナルでPython入門 (10分)
+## 実習2: ターミナルでPython入門
 
 1. ターミナルを開き、Pythonインタラクティブモードを起動:
    ```
@@ -403,7 +403,7 @@ show_todos(todos)
 
 ---
 
-## 実習3: Pythonスクリプトの作成 (10分)
+## 実習3: Pythonスクリプトの作成
 
 1. `session05/exercise/` ディレクトリに移動
 2. `basics.py` を作成して以下を書く:
@@ -486,7 +486,7 @@ $ python main.py
 
 ---
 
-## 実習4: FastAPI Hello World (10分)
+## 実習4: FastAPI Hello World
 
 1. ディレクトリの移動:
    ```
@@ -571,7 +571,7 @@ def hello(name: str):
 
 ---
 
-## 実習5: パスパラメータの実装 (10分)
+## 実習5: パスパラメータの実装
 
 1. `main.py` に `/hello/{name}` エンドポイントを追加:
    ```python
@@ -674,7 +674,7 @@ FastAPIは自動で **API仕様書** を生成する
 
 ---
 
-## 実習6: TODO APIの作成 (10分)
+## 実習6: TODO APIの作成
 
 1. `main.py` にTODOデータとエンドポイントを追加:
    ```python
