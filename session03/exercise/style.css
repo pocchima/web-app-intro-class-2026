@@ -12,20 +12,32 @@
 
 * {
   /* ヒント: margin: 0; padding: 0; box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   /* ヒント: font-family, background-color: #f3f4f6, color: #333 */
+  font-family: 'Courier New', Courier, monospace; 
+  background-color: #f1f1f1f1
+  color #333;
+
 }
 
 /* --- 2. ヘッダー ---
    ヒント: 背景色 #2563eb, 文字色 white, padding, text-align: center */
 
 .header {
+  background-color: #2A5DA6;
+  color: white;
+  padding: 100;
+  text-align: center
 }
 
 .header h1 {
   /* ヒント: font-size: 24px */
+  font-size: 32px;
 }
 
 /* --- 3. メインコンテンツ --- */
@@ -35,42 +47,67 @@ body {
            padding: 32px, border-radius: 12px, box-shadow */
 
 .todo-card {
+  background-color: white;
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: #2A5DA6;
 }
 
 /* --- 5. 入力エリア ---
    ヒント: display: flex で横並び, gap: 8px, margin-bottom: 24px */
 
 .input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
 .todo-input {
   /* ヒント: flex: 1, padding: 12px 16px, border: 2px solid #d1d5db
              border-radius: 8px, font-size: 16px */
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
 .todo-input:focus {
   /* ヒント: border-color: #2563eb, outline: none */
+  border-color: #2563eb;
+  outline: none;
 }
 
 .todo-button {
   /* ヒント: padding: 12px 24px, background-color: #2563eb
              color: white, border: none, border-radius: 8px, cursor: pointer */
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .todo-button:hover {
   /* ヒント: background-color: #1d4ed8 */
+  background-color: #1d4ed8;
 }
 
 /* --- 6. TODOリスト --- */
 
 .todo-list {
   /* ヒント: list-style: none */
+  list-style: none;
 }
 
 .todo-item {
   /* ヒント: display: flex, align-items: center, justify-content: space-between
              padding: 12px 16px, margin-bottom: 8px
              background-color: #f9fafb, border: 1px solid #e5e7eb, border-radius: 8px */
+             
 }
 
 .todo-item:hover {
