@@ -27,6 +27,7 @@
     <!-- ===== ヘッダー ===== -->
     <header>
       <!-- ヒント: h1タグでアプリのタイトルを書こう -->
+       <h1>TODOリスト</h1>
     </header>
 
     <!-- ===== メインコンテンツ ===== -->
@@ -36,12 +37,42 @@
          - input (type="text", id="todo-input", placeholder="新しいTODOを入力...")
          - button (type="submit", テキスト: "追加")
     -->
+         <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="新しいTODOを追加する">
+          <button type="submit">追加</button>
+         </form>
 
       <!-- ----- TODOリスト表示エリア ----- -->
       <!-- ヒント: ul (id="todo-list") の中に li を3つ以上追加
          各liには label でcheckboxとspanを包み、後ろに削除ボタンを置く
          1つは checked をつけて完了済みにしてみよう
-    --></main>
+    -->
+    <ul id="todo-form">
+      <li>
+        <label>
+        <input type="checkbox">
+        <span>カードを買う</span>
+        </label>
+      </li>
+        <button>削除</button>
+
+        <li>
+        <label>
+        <input type="checkbox">
+        <span>カードを売る</span>
+        </label>
+      </li>
+        <button>削除</button>
+
+        <li>
+        <label>
+        <input type="checkbox" checked>
+        <span>デッキを組む</span>
+        </label>
+      </li>
+        <button>削除</button>
+    </ul>   
+    </main>
 
     <!-- ===== フッター ===== -->
     <footer>
