@@ -1,7 +1,7 @@
 """
 第7回 実習: フロントエンドとバックエンドの結合
 
-第6回の正解をベースに、CORS設定と静的ファイル配信を追加します。
+第6回の正解をベースに、静的ファイル配信とCORS設定（発展）を追加します。
 TODO コメントの部分を実装してください。
 
 起動方法:
@@ -34,7 +34,8 @@ class TodoUpdate(BaseModel):
 app = FastAPI(title="TODO API")
 
 
-# --- TODO: CORS設定を追加してください（実習4）---
+# --- TODO: CORS設定を追加してください（実習6・発展）---
+# 同一オリジン配信なら無くても動く。フロントを別オリジンに分けたとき必要になる設定。
 # ヒント:
 #   app.add_middleware(
 #       CORSMiddleware,
@@ -130,12 +131,12 @@ def delete_todo(todo_id: int):
     return {"message": "TODO deleted", "id": todo_id}
 
 
-# --- TODO: 静的ファイル配信を追加してください（実習6）---
-# TODO(実習6): 静的ファイルを配信してください
+# --- TODO: 静的ファイル配信を追加してください（実習2）---
+# TODO(実習2): 静的ファイルを配信してください
 #   ヒント:
 #   app.mount("/", StaticFiles(directory="static", html=True), name="static")
 #
-# 注意: app.mount() はファイルの最後に書いてください
+# 注意: app.mount() はすべてのパスを受け取るので、ファイルの最後に書いてください
 
 
 if __name__ == "__main__":
