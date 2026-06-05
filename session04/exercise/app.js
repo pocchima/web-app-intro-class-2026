@@ -31,6 +31,7 @@ function addTodo(title) {
   if (title === "") return;
   todos.push({ title: title, done: false });
   render();
+  console.log(todos);
 }
 
 // ============================================================
@@ -77,6 +78,7 @@ function deleteTodo(index) {
 // ============================================================
 function render() {
   // ステップ1: リストを空にする
+  todoList.innerHTML = ""
   // ステップ2: todosが空の場合の処理
   // ステップ3: todosの各要素を描画
   // ヒント:
