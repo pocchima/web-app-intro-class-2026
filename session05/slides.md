@@ -281,8 +281,8 @@ print(todo)
    print(name)
    print(type(name))
 
-   todos = ["課題を出す", "買い物する", "掃除する"]
-   todos.append("洗濯する")
+   
+   todos.append("洗濯すtodos = ["課題を出す", "買い物する", "掃除する"]る")
    print(todos)
 
    todo = {"id": 1, "title": "課題を出す", "done": False}
