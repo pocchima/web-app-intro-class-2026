@@ -106,7 +106,30 @@ def create_todo(todo: TodoCreate):
 # PUT /todos/{todo_id} - TODO更新
 @app.put("/todos/{todo_id}")
 def update_todo(todo_id: int, todo: TodoUpdate):
-    """指定IDのTODOの完了状態を更新する"""
+    conn = sqlite3.connect(DATABASE)
+    cursor = conn.cursor()
+
+    # まず対象のTODOが存在するか確認
+    cursor.execute("SELECT title FROM todos WHERE id = ?", (todo_id,))
+    existing = cursor.fetchone()
+    if existing is None:
+        conn.close()
+        raise HTTPException(status_code=404, detail="TODO not found")
+
+    # doneを更新
+    cursor.execute(
+        "UPDATE todos SET done = ? WHERE id = ?",
+        (int(todo.done), todo_id)
+    )
+    conn.commit()
+    conn.close()
+
+    # existing は (title,) のタプルなので先頭を取り出す
+    return {
+        "id": todo_id,
+        "title": existing[0],
+        "done": todo.done
+    }
     # ヒント:
     #   1. conn = sqlite3.connect(DATABASE) で接続し、cursor = conn.cursor()
     #   2. SELECT で対象が存在するか確認
@@ -124,6 +147,22 @@ def update_todo(todo_id: int, todo: TodoUpdate):
 # DELETE /todos/{todo_id} - TODO削除
 @app.delete("/todos/{todo_id}")
 def delete_todo(todo_id: int):
+    conn = sqlite3.connect(DATABASE)
+    cursor = conn.cursor()
+
+    # まず対象のTODOが存在するか確認
+    cursor.execute("SELECT id FROM todos WHERE id = ?", (todo_id,))
+    existing = cursor.fetchone()
+    if existing is None:
+        conn.close()
+        raise HTTPException(status_code=404, detail="TODO not found")
+
+    # 削除
+    cursor.execute("DELETE FROM todos WHERE id = ?", (todo_id,))
+    conn.commit()
+    conn.close()
+
+    return {"message": "TODO deleted", "id": todo_id}
     """指定IDのTODOを削除する"""
     # ヒント:
     #   1. conn = sqlite3.connect(DATABASE) で接続し、cursor = conn.cursor()
